@@ -34,5 +34,10 @@
         android:text="线程"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/mvp_lib_test_btn"
+        android:text="测试"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

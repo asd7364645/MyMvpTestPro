@@ -23,6 +23,9 @@ public class MvpLibTestAct extends MvpBaseAct<MvpLibTestView,MvpLibModel> implem
             case R.id.mvp_lib_thread_btn:
                 startActivity(new Intent(this,ThreadTestAct.class));
                 break;
+            case R.id.mvp_lib_test_btn:
+                startActivity(new Intent(this,TestAct.class));
+                break;
         }
     }
 

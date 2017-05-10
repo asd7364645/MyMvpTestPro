@@ -10,6 +10,8 @@ import com.example.alex.mvplibrary.helper.GenericHelper;
 import com.example.alex.mvplibrary.model.MvpModel;
 import com.example.alex.mvplibrary.view.MvpView;
 
+import java.lang.reflect.Type;
+
 /**
  * Created by Alex on 2016/11/30.
  * Alex
@@ -24,6 +26,8 @@ public abstract class MvpBaseAct<V extends MvpView, M extends MvpModel> extends 
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         create(savedInstanceState);
+        Type type = this.getClass().getGenericSuperclass();
+        System.out.println(type.toString());
         try {
             //初始化mvpView
             mvpView = getViewClass().newInstance();

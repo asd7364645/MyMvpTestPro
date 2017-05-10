@@ -18,6 +18,7 @@ public class MvpLibTestView extends MvpBaseView<MvpLibTestAct> {
     private Button mvpLibFgBtn;
     private Button mvp_lib_thread_btn;
     private Button mvpLibBtn;
+    private Button mvp_lib_test_btn;
     private TextView mvpLibTv;
 
 
@@ -31,13 +32,14 @@ public class MvpLibTestView extends MvpBaseView<MvpLibTestAct> {
         mvpLibBtn = findViewById(R.id.mvp_lib_btn);
         mvp_lib_thread_btn = findViewById(R.id.mvp_lib_thread_btn);
         mvpLibTv = findViewById(R.id.mvp_lib_tv);
+        mvp_lib_test_btn = findViewById(R.id.mvp_lib_test_btn);
         mvpLibFgBtn = findViewById(R.id.mvp_lib_fg_btn);
     }
 
     @Override
     public void bindEvent() {
         super.bindEvent();
-        EventHelper.click(presenter, mvpLibBtn,mvp_lib_thread_btn, mvpLibFgBtn);
+        EventHelper.click(presenter, mvpLibBtn,mvp_lib_thread_btn, mvpLibFgBtn,mvp_lib_test_btn);
     }
 
     public void setMyTextView(String string) {

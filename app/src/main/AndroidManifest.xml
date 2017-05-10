@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".presenter.MvpLibFgAct" />
-        <activity android:name=".presenter.ThreadTestAct"></activity>
+        <activity android:name=".presenter.ThreadTestAct" />
+        <activity android:name=".presenter.TestAct"></activity>
     </application>
 
 </manifest>
