@@ -7,3 +7,6 @@ https://github.com/hehonghui/android-tech-frontier/tree/master/androidweekly/%E4
 https://kymjs.com/code/2015/11/09/01/
 
 并做了一些自己的封装              
+ 
+混淆 代码：-keep class * extends com.example.alex.mvplibrary.view.MvpView
+如果还有错误的时候添加上 -keep class * extends com.example.alex.mvplibrary.model.MvpModel
