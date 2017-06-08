@@ -32,9 +32,9 @@ public abstract class MvpBaseAct<V extends MvpView, M extends MvpModel> extends 
             //初始化mvpView
             mvpView = getViewClass().newInstance();
             mvpView.bindPresenter(this);
+            mvpModel = getModelClass().newInstance();
             setContentView(mvpView.createView(getLayoutInflater(), null, savedInstanceState));
             //初始化model
-            mvpModel = getModelClass().newInstance();
             setToolBar(mvpView.getToolBar());
             if (getSupportActionBar() != null)
                 mvpView.settingActionBar(getSupportActionBar());

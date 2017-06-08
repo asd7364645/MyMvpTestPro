@@ -30,9 +30,9 @@ public abstract class MvpBaseFrag<V extends MvpBaseFragView, M extends MvpModel>
             //初始化mvpView
             mvpView = getViewClass().newInstance();
             mvpView.bindPresenter(this);
+            mvpModel = getModelClass().newInstance();
             rootView = mvpView.createView(inflater, container, savedInstanceState);
             //初始化mvpModel
-            mvpModel = getModelClass().newInstance();
             if (mvpView != null)
                 created(savedInstanceState);
         } catch (java.lang.InstantiationException e) {
